@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+#Navbar{
+    background: #f9f9f9;
+    margin-bottom: 83px;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:hover{
+    background: #ffa500;
+}
+.navbar-toggler:hover span{
+    color: white;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.navbar-nav .navbar-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+
+/*scroll images  section start*/
+
+.home{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.home #carouselExampleAutoplaying img{
+    height: 87vh;
+}
+
+.home h5{
+    text-align: center;
+    color: red;
+}
+
+/* Centered text */
+.home .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    z-index: 10;
+}
+.home .centered h5{
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 10px;
+    color: azure;
+    text-transform: uppercase;
+}
+
+.salutation{
+    font-size: 36px;
+}
+.changeContent:after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0%{content: "Présence, notre préoccupation"}
+    33%{content: "Besoin, notre détermination"}
+    60%{content: "Patience, notre acharnement"}
+    100%{content: "Satisfaction, notre engoument"}
+}
+
+.home .centered h1{
+    padding-top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    color: azure;
+}
+
+.home .centered a:hover{
+    background: lightcyan;
+}
+@media (max-width: 450px){
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width: 450px){
+    .home .centered h5{
+        font-size: 17px;
+        width: 100%;
+    }
+    .home .centered h1{
+        font-size: 15px;
+        width: 100%;
+    }
+    .salutation{
+        font-size: 15px;
+        width: 100%;
+    }
+    #logo{
+
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1058px){
+    .home .centered h5{
+        font-size: 30px;
+        width: 100%;
+    }
+    .home .centered h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .salutation{
+        font-size: 25px;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 75px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 882px){
+    .home .centered h5{
+        font-size: 20px;
+        width: 100%;
+    }
+    .home .centered h1{
+        font-size: 15px;
+        width: 100%;
+    }
+    .salutation{
+        font-size: 15px;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 0;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 588px){
+    .home .centered h5{
+        font-size: 18px;
+        width: 100%;
+    }
+    .home .centered h1{
+        font-size: 13px;
+        width: 100%;
+    }
+    .salutation{
+        font-size: 15px;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 0;
+        font-size: 30px;
+    }
+}
+
