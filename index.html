@@ -1,293 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ets aki venture</title>
-    <!--integration de bootstrap css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <link href="style.css" rel="stylesheet" >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ets aki venture</title>
+        <!--integration de bootstrap css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="style.css" rel="stylesheet" >
 
 
-</head>
-<body>
+    </head>
+    <body>
 
 
     
-<!--Navigation bar-->
-<div id="Navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="accueil" id="logo"><span>ETS</span> AKI VENTURE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span ><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"href="#acceuil">Acceuil</a>
-                    </li>
+    <!--Navigation bar-->
+        <div id="Navbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="accueil" id="logo"><span>ETS</span> AKI VENTURE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span ><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"href="#acceuil">Acceuil</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#aPropos">A Propos</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#aPropos">A Propos</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#services">Services</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#localisation">Localisation</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#localisation">Localisation</a>
+                            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
+                            </li>
 
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#realisation">Réalisations</a>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#realisation">Réalisations</a>
+                            </li>
 
-                </ul>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Navbar end-->
+
+
+        <!--Home section  start
+        <div class="home">
+            <div class="content">
+                <h5>Bienvenue chez L'Ets Aki Venture</h5>
+                <h1>Nous <span class="changecontent"></span></h1>
 
             </div>
         </div>
-    </nav>
-</div>
-<!--Navbar end-->
+        Home section  end -->
 
 
-<!--Home section  start
-<div class="home">
-    <div class="content">
-        <h5>Bienvenue chez L'Ets Aki Venture</h5>
-        <h1>Nous <span class="changecontent"></span></h1>
+    <!--scroll images  section start-->
+        <div id="acceuil">
+            <section class="home">
 
-    </div>
-</div>
-Home section  end -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="centered">
+                        <h5>Welcome to AKI VENTURE ets</h5>
+                        <h1><span class="salutation">votre </span><span class="changeContent"></span></h1>
+                        <a href="#aPropos" class="btn btn-warning">Decouvez nous</a>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/r1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
 
-<!--scroll images  section start-->
-    <div id="acceuil">
-        <section class="home">
-
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="centered">
-                    <h5>Welcome to AKI VENTURE ets</h5>
-                    <h1><span class="salutation">votre </span><span class="changeContent"></span></h1>
-                    <a href="#aPropos" class="btn btn-warning">Decouvez nous</a>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/r1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/r.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/r.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/r.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption ">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+    <!--scroll images  section end-->
+
+
+    <!-- A Propos de nous  start-->
+      <section id="aPropos" class="aPropos">
+        <div class="">
+            <div class="main-text">
+                <h1><span>A</span> Propos de Nous</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-7">
+                    <div class="card">
+                        <img src="images/r1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 py-lg-5">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam quod quaerat eligendi accusantium voluptatem iure voluptates autem, voluptatibus possimus aliquam libero porro repudiandae amet corporis ipsam quasi repellendus, officiis nostrum at. Itaque aut consectetur dolorum tempora unde, voluptates accusamus optio assumenda? Veritatis, quasi fuga illum minima alias ex eligendi voluptatibus? Rem ut reiciendis maiores minima officia veritatis veniam amet vitae minus? Assumenda, quos. Ullam quasi corrupti ratione veniam minima suscipit, qui deserunt atque sint sapiente corporis, blanditiis assumenda facere. Unde quo accusantium consequuntur consectetur iusto minima distinctio perspiciatis eum omnis reprehenderit voluptas fugit aspernatur maiores repudiandae quod ab deserunt rerum porro at ducimus, a ullam tempora vel? Repellat explicabo eligendi fuga cumque ipsam.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+
+    <!-- A Propos de nous  end-->
+
+
+
+        <!-- A Propos de nous  end-->
+
+        <!--scroll images  section start-->
+
+
+
+        <section id="services" class="services">
+            <div class="">
+                <div class="main-text">
+                    <h1><span>Nos</span> Services</h1>
+                </div>
+
+                <div class="row" style="margin-top: 30px">
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fa-solid fa-person-digging"></i>
+                            <div class="card-body">
+                                <h3 >BTP</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/r.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption ">
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div class="card-body">
+                                <h3 >LIGHT</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fa-solid fa-house"></i>>
+                            <div class="card-body">
+                                <h3 >Boutique</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <div class="row" style="margin-top: 30px">
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fa-solid fa-person-digging"></i>
+                            <div class="card-body">
+                                <h3 >BTP</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="card-body">
+                                <h3 >LIGHT</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <i class="fa-solid fa-house"></i>>
+                            <div class="card-body">
+                                <h3 >Boutique</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-    </div>
 
-<!--scroll images  section end-->
-
-
-<!-- A Propos de nous  start-->
-  <section id="aPropos" class="aPropos">
-    <div class="">
-        <div class="main-text">
-            <h1><span>A</span> Propos de Nous</h1>
-        </div>
-
-        <div class="row">
-
-            <div class="col-xl-7">
-                <div class="card">
-                    <img src="images/r1.png" alt="">
-                </div>
-            </div>
-
-            <div class="col-lg-5 py-lg-5">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam quod quaerat eligendi accusantium voluptatem iure voluptates autem, voluptatibus possimus aliquam libero porro repudiandae amet corporis ipsam quasi repellendus, officiis nostrum at. Itaque aut consectetur dolorum tempora unde, voluptates accusamus optio assumenda? Veritatis, quasi fuga illum minima alias ex eligendi voluptatibus? Rem ut reiciendis maiores minima officia veritatis veniam amet vitae minus? Assumenda, quos. Ullam quasi corrupti ratione veniam minima suscipit, qui deserunt atque sint sapiente corporis, blanditiis assumenda facere. Unde quo accusantium consequuntur consectetur iusto minima distinctio perspiciatis eum omnis reprehenderit voluptas fugit aspernatur maiores repudiandae quod ab deserunt rerum porro at ducimus, a ullam tempora vel? Repellat explicabo eligendi fuga cumque ipsam.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-  </section>
-
-<!-- A Propos de nous  end-->
+        <!-- A Propos de nous  end-->
 
 
+        <!-- Localisation start-->
 
-<!-- A Propos de nous  end-->
-
-<!--scroll images  section start-->
-
-
-
-<section id="services" class="services">
-    <div class="">
-        <div class="main-text">
-            <h1><span>Nos</span> Services</h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px">
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-person-digging"></i>
-                    <div class="card-body">
-                        <h3 >BTP</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <div class="card-body">
-                        <h3 >LIGHT</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-house"></i>>
-                    <div class="card-body">
-                        <h3 >Boutique</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 30px">
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-person-digging"></i>
-                    <div class="card-body">
-                        <h3 >BTP</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fas fa-lightbulb"></i>
-                    <div class="card-body">
-                        <h3 >LIGHT</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-house"></i>>
-                    <div class="card-body">
-                        <h3 >Boutique</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- A Propos de nous  end-->
-
-
-<!-- Localisation start-->
-
-<section id="localisation" class="localisation">
-    <div class="">
-        <div class="main-text">
-            <h1><span>L</span> ocalisation Google <span>Map</span></h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px">
+        <section id="localisation" class="localisation">
             <div class="">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=ets aki venture&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <div class="main-text">
+                    <h1><span>L</span> ocalisation Google <span>Map</span></h1>
+                </div>
 
-                                </iframe>
+                <div class="row" style="margin-top: 30px">
+                    <div class="">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe  id="gmap_canvas" width="100%" height="500px" src="https://maps.google.com/maps?q=ets aki venture&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+                                        </iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Localisation end-->
+
+
+        <!-- Contacts start-->
+
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2 class="u-text"> Nous contacter </h2>
+                    <p class="u-text u-text-2">Notre adresse postale est:
+                        <br> 152A Charlotte Street,
+                        <br> Peterborough ON
+                        <br> Téléphone: 705-742-3221
+                    </p>
+                    <div class="d-flex justify-content-between">
+                        <div class="p-2">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                   <!-- <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                        <a class="u-social-url" target="_blank" href="">
+                            <span class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-1">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 32px;">
+                                    <use href="#svg-5b9f"></use>
+                                </svg>
+                                <svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" space="preserve" id="svg-5b9f" class="u-svg-content">
+                                    <path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="u-social-url" target="_blank" href="">
+                            <span class="u-icon u-icon-circle u-social-twitter u-social-type-logo u-icon-2">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 32px;">
+                                    <use href="#svg-f4d6"></use>
+                                </svg>
+                                <svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" space="preserve" id="svg-f4d6" class="u-svg-content">
+                                    <path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="u-social-url" target="_blank" href="">
+                            <span class="u-icon u-icon-circle u-social-instagram u-social-type-logo u-icon-3">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 32px;">
+                                    <use href="#svg-7498"></use>
+                                </svg>
+                                <svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" space="preserve" id="svg-7498" class="u-svg-content">
+                                    <path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path>
+                                    <path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path>
+                                    <path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="u-social-url" target="_blank" href="#">
+                            <span class="u-icon u-icon-circle u-social-google u-social-type-logo u-icon-4">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="width: 32px;">
+                                    <use href="#svg-cf38"></use>
+                                </svg>
+                                <svg x="0px" y="0px" viewBox="0 0 112.2 112.2" enable-background="new 0 0 112.2 112.2" space="preserve" id="svg-cf38" class="u-svg-content">
+                                    <path d="M62.2,81.6c-8.6,11.2-24.6,14.4-37.6,10C10.9,87,0.8,73.2,1,58.5c-0.8-18,15.2-34.6,33.1-34.9 c9.2-0.8,18.2,2.7,25,8.6c-2.9,3.1-5.7,6.2-8.9,9.2c-6.2-3.8-13.5-6.5-20.6-4C18.1,40.7,11,54.2,15.4,65.6 c3.5,11.8,17.8,18.3,29.2,13.2c5.8-2.1,9.7-7.4,11.3-13.2c-6.6-0.1-13.2,0-20.1-0.3c0-3.9,0-7.9,0-11.9c11.2,0,22.2,0,33.3,0 C69.9,63.4,68.3,73.9,62.2,81.6z M110.9,63.7c-3.4,0-6.6,0-10,0c0,3.4,0,6.6,0,10c-3.4,0-6.6,0-10,0c0-3.4,0-6.6,0-10 c-3.4,0-6.6,0-10,0c0-3.4,0-6.6,0-10c3.4,0,6.6,0,10,0c0-3.4,0-6.6,0.1-10c3.4,0,6.6,0,10,0c0,3.4,0,6.6,0,10c3.4,0,6.6,0,10,0 C110.9,56.9,110.9,60.3,110.9,63.7z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="col">
+                    2 of 2
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<!-- Localisation end-->
+    </section>
+
+        <!-- Contact end-->
 
 
+        <!--Integration of bootstap java script-->
+            <script src="js/bootstrap.bundle.min.js"></script>
+        <!--Integration  file java script-->
+        <script src="script.js"></script>
 
-<!--Integration of bootstap java script-->
-    <script src="js/bootstrap.bundle.min.js"></script>
-<!--Integration  file java script-->
-<script src="script.js"></script>
+        <!-- fond awasome cdn start-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <!-- fond awasome cdn end-->
 
-<!-- fond awasome cdn start-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<!-- fond awasome cdn end-->
+        <!--Google fonts start -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <!--Google fonts start -->
 
-<!--Google fonts start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-<!--Google fonts start -->
-
-</body>
+    </body>
 </html> 
