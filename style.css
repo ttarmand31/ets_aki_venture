@@ -240,7 +240,7 @@
     .aPropos .row p{
         padding-top: 25px;
     }
-    }
+}
 
 /* About section end */
 
@@ -273,6 +273,17 @@
 .services .card .card-body{
     text-align: center;
 }
+
+@media (max-width: 767px){
+    .services {
+        background: #f9f9f9;
+        padding: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
 /* section services end */
 
 
@@ -290,7 +301,7 @@
 }
 
 /* Localisation section map start */
-
+/*
 .gmap_canvas {
     overflow:hidden;
     background:none!important;
@@ -303,6 +314,6 @@
     text-align:right;
     height:100%;width:100%;
 }
-
+*/
  /* Localisation section map start */
 
