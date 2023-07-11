@@ -1,36 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+:root{
+    --primary : #fea116;
+    --light : #f1f8ff;
+    --dark : #0f172b;
+    --principal :#faeedf;
 }
+
+body{
+    background-color: #fff;
+}
+
+
+/*=============Navigation bar section================= sart*/
+
 #Navbar{
     background: #f9f9f9;
     margin-bottom: 83px;
 }
 #logo{
     font-size: 36px;
-    font-weight: 700;
-    color: black;
+    font-weight: 800;
+    color: #0af51d;
     text-shadow: 0px 1px 1px black;
     margin-bottom: 5px;
     margin-left: 50px;
 }
 
 #logo span{
-    color: #ffa500;
+    color: #0af51d;
+}
+.navbar{
+    background-color: white;
 }
 .navbar-toggler span{
-    color: #ffa500;
+    color: #0af51d;
 }
 .navbar-toggler{
     border: none;
 }
 .navbar-toggler:hover{
-    background: #ffa500;
+    background: #0af51d;
 }
 .navbar-toggler:hover span{
     color: white;
@@ -47,24 +55,26 @@
     transition: 0.5s ease;
 }
 .nav-item .nav-link:hover{
-    background: #ffa500;
+    background: #0af51d;
     color: white;
 }
 
-/*scroll images  section start*/
+
+/*=============Navigation bar section================= end*/
+
+
+
+/*=============image scroll section================= sart*/
+
 
 .home{
     position: relative;
     text-align: center;
     color: black;
 }
+
 .home #carouselExampleAutoplaying img{
     height: 87vh;
-}
-
-.home h5{
-    text-align: center;
-    color: red;
 }
 
 /* Centered text */
@@ -76,21 +86,20 @@
     overflow: visible;
     z-index: 10;
 }
+
 .home .centered h5{
     font-size: 36px;
     font-weight: 700;
     text-shadow: 0px 1px 1px black;
-    margin-bottom: 10px;
-    color: azure;
-    text-transform: uppercase;
+    color: #faeedf;
 }
-
+/* displa ythe message on image scrolling*/
 .salutation{
     font-size: 36px;
 }
 .changeContent:after{
     content: ' ';
-    color: #ffa500;
+    color: #0af51d;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
 }
@@ -101,6 +110,7 @@
     60%{content: "Patience, notre acharnement"}
     100%{content: "Satisfaction, notre engoument"}
 }
+
 
 .home .centered h1{
     padding-top: 5px;
@@ -113,7 +123,16 @@
 
 .home .centered a:hover{
     background: lightcyan;
+    color: #4df50a;
 }
+
+.home .centered a{
+    color: white;
+    background: #91f899;
+}
+
+/* responsive on defferents screen size */
+
 @media (max-width: 450px){
     .home {
         background-position: 50%;
@@ -177,6 +196,25 @@
     }
 }
 
+@media (max-height: 1180px){
+    .home .centered h5{
+        font-size: 30px;
+        width: 100%;
+    }
+    .home .centered h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .salutation{
+        font-size: 15px;
+        width: 100%;
+    }
+    #logo{
+        margin-left: 0;
+        font-size: 30px;
+    }
+}
+
 
 @media (max-width: 588px){
     .home .centered h5{
@@ -198,52 +236,190 @@
 }
 
 
-/* About section start */
+/*=============image scroll section================= end*/
+
+/*=============About section================= Start*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 .aPropos{
-    background: #f9f9f9;
-    padding: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-family: "Arial", sans-serif;
+    background-color: #f8f8f8;
+    margin: 50px;
 }
-
-.main-text h1{
+.aProposTitle h1{
+    color: #0af51d;
+    font-size: 55px;
     text-align: center;
     text-shadow: 0px 1px 1px black;
-    font-weight: 600;
-}
-.main-text h1 span{
-    color: #ffa500;
 }
 
- #aPropos .card img{
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-}
-.aPropos .row{
-    margin-top: 30px;
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
 }
 
-.aPropos .row p{
+.aPropos-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInup 2s ease;
+}
+
+.aPropos-content h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.aPropos-content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
     text-align: justify;
     text-indent: 20px;
 }
 
-@media (max-width: 767px){
-    .aPropos {
-        background: #f9f9f9;
-        padding: 40px;
-        margin-left: 0px;
-        margin-right: 0px;
+.aPropos-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.aPropos-content button{
+    display: inline-block;
+    background-color: #0af51d;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.aPropos-content button:hover{
+    background-color: #fea116;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1288px) {
+    .aProposTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
     }
 
-    .aPropos .row p{
-        padding-top: 25px;
+    .aPropos-content h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .aPropos-content p{
+        font-size: 18px;
+    }
+
+    .aPropos-content button{
+        font-size: 16px;
+        padding: 8px 16px;
     }
 }
 
-/* About section end */
+@media screen and (max-width: 955px) {
+    .aProposTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .aPropos{
+        margin: 5px;
+    }
+    .group{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .aPropos-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
 
+    .aPropos-content h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aPropos-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .aPropos-content h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aPropos-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .aPropos-image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInup {
+    0%{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+
+/*=============About scroll section================= end*/
+
+
+
+/*=============Gallery section================= start*/
+
+.gallery{
+    background-color: #f8f8f8;
+    margin: 50px;
+}
+
+
+
+/*=============Gallery section================= end*/
 
 /* section services start */
 
@@ -252,6 +428,10 @@
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px
+}
+.main-text{
+    color: #0af51d;
+    font-weight: 800;
 }
 
 .services .card{
@@ -262,7 +442,7 @@
 .services .card i{
     font-size: 80px;
     text-align: center;
-    color: #ffa500;
+    color: #0af51d;
     margin-top: 20px;
 }
 
@@ -285,35 +465,3 @@
 }
 
 /* section services end */
-
-
-.localisation{
-    background: #f9f9f9;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px
-}
-
-.localisation .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Localisation section map start */
-/*
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:100%;
-    width:100%;
-}
-
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:100%;width:100%;
-}
-*/
- /* Localisation section map start */
-

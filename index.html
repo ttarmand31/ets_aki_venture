@@ -1,79 +1,73 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ets aki venture</title>
-    <!--integration de bootstrap css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <link href="style.css" rel="stylesheet" >
+    <title>Ets Aki Venture</title>
 
+    <!--bootstrap css importation -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--custom style file importation-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--bootstrap icons importation -->
+    <link href="css/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" >
 
 </head>
 <body>
 
+<div class="container--xxl bg-white p-0">
 
-    
-<!--Navigation bar-->
-<div id="Navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="accueil" id="logo"><span>ETS</span> AKI VENTURE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span ><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"href="#acceuil">Acceuil</a>
-                    </li>
+    <!--===============Navigation Bar ===================start -->
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#aPropos">A Propos</a>
-                    </li>
+    <div id="Navbar">
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="index.html" id="logo"><span>ETS</span> AKI VENTURE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span ><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"href="#acceuil">Acceuil</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#services">Services</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#aPropos">A Propos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#localisation">Localisation</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#realisation">Réalisations</a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#localisation">Localisation</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#realisation">Réalisations</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
+                        </li>
 
-                </ul>
+                    </ul>
 
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
-<!--Navbar end-->
-
-
-<!--Home section  start
-<div class="home">
-    <div class="content">
-        <h5>Bienvenue chez L'Ets Aki Venture</h5>
-        <h1>Nous <span class="changecontent"></span></h1>
-
+        </nav>
     </div>
-</div>
-Home section  end -->
+
+    <!--===============Navigation Bar ===================end -->
 
 
-<!--scroll images  section start-->
-    <div id="acceuil">
-        <section class="home">
 
+    <!--===============Header section ===================start -->
+
+    <div class="container-fluid p-0 mb-5" id="acceuil">
+        <div class="home">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
@@ -81,10 +75,10 @@ Home section  end -->
                     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="centered">
-                    <h5>Welcome to AKI VENTURE ets</h5>
-                    <h1><span class="salutation">votre </span><span class="changeContent"></span></h1>
-                    <a href="#aPropos" class="btn btn-warning">Decouvez nous</a>
+                <div class="centered d-flex flex-column align-items-center justify-content-center" >
+                    <h5 class="text-uppercase text-principal">Welcome to ETS AKI VENTURE</h5>
+                    <h1><span class="salutation">Votre </span><span class="changeContent"></span></h1>
+                    <a href="#aPropos" class="buttonDiscover btn" style="background: #0af51d;">Decouvez nous</a>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
@@ -113,176 +107,274 @@ Home section  end -->
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
+        </div>
     </div>
 
-<!--scroll images  section end-->
+    <div class="container-fluid px-5 mb-5">
 
 
-<!-- A Propos de nous  start-->
-  <section id="aPropos" class="aPropos">
-    <div class="">
-        <div class="main-text">
-            <h1><span>A</span> Propos de Nous</h1>
+    </div>
+
+
+    <!--===============Header Section ===================end -->
+
+
+    <!--===============About section ===================start -->
+
+
+    <section class="aPropos mb-5" id="aPropos">
+        <div class="aProposTitle">
+            <h1><b>A Propos De nous</b></h1>
         </div>
-
-        <div class="row">
-
-            <div class="col-xl-7">
-                <div class="card">
-                    <img src="images/r1.png" alt="">
-                </div>
-            </div>
-
-            <div class="col-lg-5 py-lg-5">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam quod quaerat eligendi accusantium voluptatem iure voluptates autem, voluptatibus possimus aliquam libero porro repudiandae amet corporis ipsam quasi repellendus, officiis nostrum at. Itaque aut consectetur dolorum tempora unde, voluptates accusamus optio assumenda? Veritatis, quasi fuga illum minima alias ex eligendi voluptatibus? Rem ut reiciendis maiores minima officia veritatis veniam amet vitae minus? Assumenda, quos. Ullam quasi corrupti ratione veniam minima suscipit, qui deserunt atque sint sapiente corporis, blanditiis assumenda facere. Unde quo accusantium consequuntur consectetur iusto minima distinctio perspiciatis eum omnis reprehenderit voluptas fugit aspernatur maiores repudiandae quod ab deserunt rerum porro at ducimus, a ullam tempora vel? Repellat explicabo eligendi fuga cumque ipsam.
+        <div class="group">
+            <div class="aPropos-content">
+                <h2><b>Decouvez ETS AKI VENTURE</b></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias ipsum consequatur modi, assumenda eveniet et repellendus? Unde in consequatur beatae suscipit soluta aperiam maiores laudantium modi aliquid.
+                    Tenetur, possimus ipsam.
                 </p>
+                <button class="cta-button float-end">Lire la suite</button>
+            </div>
+            <div class="aPropos-image">
+                <img src="images/r1.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!--===============About Section ===================end -->
+
+
+    <!--===============Service  section ===================start -->
+
+
+    <!--===============service section ===================end -->
+
+    <section id="services" class="services">
+        <div class="">
+            <div class="main-text text-center">
+                <h1><b><span>Nos</span> Services</b></h1>
+            </div>
+
+            <div class="row" style="margin-top: 30px">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-person-digging"></i>
+                        <div class="card-body">
+                            <h3 >BTP</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div class="card-body">
+                            <h3 >LIGHT</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="card-body">
+                            <h3 >Boutique</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-person-digging"></i>
+                        <div class="card-body">
+                            <h3 >BTP</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="card-body">
+                            <h3 >LIGHT</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="card-body">
+                            <h3 >Boutique</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </section>
 
+
+    <!--===============Gallery Section ===================end -->
+
+
+    <!-- Gallery section start-->
+    <div class="gallery" id="realisation">
+        <div class="gallery-content">
+            <div class="text-center wow fadeIn">
+                <h1 class="mb-5">Parcourir nos <span class="text text-uppercase" style="color: #0af51d;">realisarion</span></h1>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="rooms-item shadow rounder overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/r.png" alt="" class="img-fluid">
+                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: #0af51d;">
+                                Exemple 1
+                            </small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Nom du project</h5>
+                                <div class="ps-2">
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <i class="fa-watch"></i>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
+                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                            </div>
+
+                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="rooms-item shadow rounder overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/r.png" alt="" class="img-fluid">
+                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: #0af51d;">
+                                Exemple 1
+                            </small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Nom du project</h5>
+                                <div class="ps-2">
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <i class="fa-watch"></i>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
+                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                            </div>
+
+                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeIn">
+                    <div class="rooms-item shadow rounder overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/r.png" alt="" class="img-fluid">
+                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: #0af51d;">
+                                Exemple 1
+                            </small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Nom du project</h5>
+                                <div class="ps-2">
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <i class="fa-watch"></i>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
+                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                            </div>
+
+                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </div>
-  </section>
-
-<!-- A Propos de nous  end-->
+    <!-- Gallery section start-->
 
 
-
-<!-- A Propos de nous  end-->
-
-<!--scroll images  section start-->
+    <!--===============Gallery Section ===================end -->
+</div>
 
 
 
-<section id="services" class="services">
-    <div class="">
-        <div class="main-text">
-            <h1><span>Nos</span> Services</h1>
-        </div>
+<!--bootstrap js importation-->
+<script src="js/bootstrap.bundle.min.js"></script>
 
-        <div class="row" style="margin-top: 30px">
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-person-digging"></i>
-                    <div class="card-body">
-                        <h3 >BTP</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <div class="card-body">
-                        <h3 >LIGHT</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-house"></i>>
-                    <div class="card-body">
-                        <h3 >Boutique</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 30px">
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-person-digging"></i>
-                    <div class="card-body">
-                        <h3 >BTP</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fas fa-lightbulb"></i>
-                    <div class="card-body">
-                        <h3 >LIGHT</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 py-3 py-md-0">
-                <div class="card">
-                    <i class="fa-solid fa-house"></i>>
-                    <div class="card-body">
-                        <h3 >Boutique</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque commodi magnam.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- A Propos de nous  end-->
-
-
-<!-- Localisation start-->
-
-<section id="localisation" class="localisation">
-    <div class="">
-        <div class="main-text">
-            <h1><span>L</span> ocalisation Google <span>Map</span></h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px">
-            <div class="">
-                <div class="card">
-                    <div class="card-body">
-
-                        <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ets%20aki%20venture&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-i.net">like 123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Localisation end-->
-
-
-
-<!--Integration of bootstap java script-->
-    <script src="js/bootstrap.bundle.min.js"></script>
 <!--Integration  file java script-->
-<script src="script.js"></script>
 
 <!-- fond awasome cdn start-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <!-- fond awasome cdn end-->
 
 <!--Google fonts start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 <!--Google fonts start -->
 
 </body>
-</html> 
+</html>
