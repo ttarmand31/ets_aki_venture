@@ -59,6 +59,11 @@ body{
     color: white;
 }
 
+.active, .nav-link:hover{
+    border-radius: 15px;
+    background: #0af51d;
+    color: white;
+}
 
 /*=============Navigation bar section================= end*/
 
@@ -239,11 +244,7 @@ body{
 /*=============image scroll section================= end*/
 
 /*=============About section================= Start*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 
 .aPropos{
     font-family: "Arial", sans-serif;
