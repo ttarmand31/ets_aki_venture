@@ -418,11 +418,24 @@ img{
     margin: 50px;
 }
 
+.imageCss{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    height: 450px;
+    cursor: pointer;
+  }
 
+.gallery h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
 
 /*=============Gallery section================= end*/
 
-/* section services start */
+
+/*=============section services================= start*/
 
 .services{
     background: #f9f9f9;
@@ -449,10 +462,11 @@ img{
 
 .services .card .card-body h3{
     font-weight: 600;
+    text-align: center;
 }
 
-.services .card .card-body{
-    text-align: center;
+.services .card .card-body p{
+    font-size: 16px;
 }
 
 @media (max-width: 767px){
@@ -465,4 +479,103 @@ img{
 
 }
 
-/* section services end */
+/*=============section services================= End*/
+
+/*=============section Contact================= Start*/
+
+.contact{
+    margin: 50px;
+    background: #f9f9f9;
+}
+
+.contact h1{
+    color: #0af51d;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.contact span{
+    color: #000000;
+}
+.coordonnes{
+    background-color: #7be685;
+    padding: 20px;
+    color: white;
+}
+.coordonnes i{
+    font-size: 25px;
+}
+.coordonnes .d-flex p{
+    color: black;
+    font-size: 18px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.coordonnes .d-flex p a{
+    color: black;
+    padding-left: 18px;
+}
+/*=============section Contact================= End*/
+
+
+/*=============section Localisation================= Start*/
+.localisation{
+    margin: 50px;
+    background: #f9f9f9;
+}
+.localisation h1{
+    color: #0af51d;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.localisation span{
+    color: #000000;
+}
+.localisation .map {
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+}
+.localisation .map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/*=============section Localisation================= End*/
+
+
+/*=============section Modal ================= Start*/
+
+#gallery-modal .modal-img{
+    width: 100%;
+}
+
+/*=============section Modal ================= End*/
+
+
+
+/*=============Page Gallery ================= Start*/
+
+.galleryPage{
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.galleryPage img{
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 0 015px rgba(0,0,0,0.3);
+    cursor: pointer;
+    height: 100%;
+}
+
+/*=============Page Gallery ================= Start*/
+
+
+
