@@ -472,7 +472,7 @@ img{
 @media (max-width: 767px){
     .services {
         background: #f9f9f9;
-        padding: 40px;
+        padding: 15px;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -557,6 +557,50 @@ img{
 }
 
 /*=============section Modal ================= End*/
+
+
+
+@media screen and (max-width: 1288px) {
+    .contactTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .localisationTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .localisation{
+        margin: 10px;
+    }
+    .gallery{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .contactTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .contact{
+        margin: 5px;
+    }
+    .localisationTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .localisationTitle{
+        margin: 5px;
+    }
+
+    .localisation{
+        margin: 5px;
+    }
+    .gallery{
+        margin: 5px;
+    }
+}
+
 
 
 
