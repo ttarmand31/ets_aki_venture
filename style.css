@@ -7,6 +7,7 @@
 
 body{
     background-color: #fff;
+
 }
 
 
@@ -256,6 +257,10 @@ body{
     font-size: 55px;
     text-align: center;
     text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+}
+.aProposTitle h1 span{
+    color: black;
 }
 
 .group{
@@ -283,7 +288,7 @@ body{
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 40px;
-    color: #666;
+    color: black;
     text-align: justify;
     text-indent: 20px;
 }
@@ -443,6 +448,16 @@ img{
     margin-left: 50px;
     margin-right: 50px
 }
+.servicesTitle h1{
+    color: #0af51d;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+}
+.servicesTitle h1 span{
+    color: black;
+}
 .main-text{
     color: #0af51d;
     font-weight: 800;
@@ -451,7 +466,6 @@ img{
 .services .card{
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     border: none;
-    cursor: pointer;
 }
 .services .card i{
     font-size: 80px;
@@ -465,21 +479,72 @@ img{
     text-align: center;
 }
 
+.services .card .card-body h6{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 .services .card .card-body p{
     font-size: 16px;
 }
 
-@media (max-width: 767px){
-    .services {
-        background: #f9f9f9;
-        padding: 15px;
-        margin-left: 0px;
-        margin-right: 0px;
+@media screen and (max-width: 1288px) {
+    .servicesTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .services{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .servicesTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .servicesTitle{
+        margin: 5px;
+    }
+
+    .services{
+        margin: 5px;
     }
 
 }
 
 /*=============section services================= End*/
+
+/*=============Realiasation  Section================= Start*/
+.realisationTitle h1{
+    color: #0af51d;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+}
+.realisationTitle h1 span{
+    color: black;
+}
+@media screen and (max-width: 1288px) {
+    .realisationTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .realisationTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .realisationTitle{
+        margin: 5px;
+    }
+
+}
+
+/*=============Realiasation  Section================= End*/
 
 /*=============section Contact================= Start*/
 
@@ -504,13 +569,19 @@ img{
     padding: 20px;
     color: white;
 }
+.horaire{
+    padding: 20px;
+}
+.horaire p{
+    color: black;
+    font-size: 18px;
+}
 .coordonnes i{
     font-size: 25px;
 }
 .coordonnes .d-flex p{
     color: black;
     font-size: 18px;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .coordonnes .d-flex p a{
@@ -569,7 +640,14 @@ img{
         font-size: 40px;
         margin-top: 30px;
     }
+    .momentTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
     .localisation{
+        margin: 10px;
+    }
+    .moment{
         margin: 10px;
     }
     .gallery{
@@ -589,13 +667,24 @@ img{
         font-size: 40px;
         margin-top: 30px;
     }
+    .momentTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
     .localisationTitle{
         margin: 5px;
     }
-
+    .momentTitle{
+        margin: 5px;
+    }
     .localisation{
         margin: 5px;
     }
+
+    .moment{
+        margin: 5px;
+    }
+
     .gallery{
         margin: 5px;
     }
@@ -621,5 +710,58 @@ img{
 
 /*=============Page Gallery ================= Start*/
 
+/*=============Moment fort Section ================= Start*/
+.momentFort{
+    margin: 50px;
+    background: #f9f9f9;
+}
+.momentFortTitle h1{
+    color: #0af51d;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 900;
+}
+.momentFort span{
+    color: #000000;
+}
+.momentFort .map {
+    width: 100%;
+    height: 567px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+}
+.momentFort .map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
+
+@media screen and (max-width: 1288px) {
+    .momentFortTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .momentFort{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .momentFortTitle h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .momentFortTitle{
+        margin: 5px;
+    }
+
+    .momentFort{
+        margin: 5px;
+    }
+
+}
+
+/*=============Moment fort Section ================= End*/
 

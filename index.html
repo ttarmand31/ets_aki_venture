@@ -1,576 +1,303 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ets Aki Venture</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ets Aki Venture</title>
 
-    <!--bootstrap css importation -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--custom style file importation-->
-    <link rel="stylesheet" href="style.css">
+<!--bootstrap css importation -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--custom style file importation-->
+<link rel="stylesheet" href="style.css">
 
-    <!--bootstrap icons importation -->
-    <link href="css/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" >
+<!--bootstrap icons importation -->
+<link href="css/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" >
+
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload=display_ct();>
 
-<div class="container--xxl bg-white p-0">
+    <div class="container--xxl bg-white p-0">
 
-    <!--===============Navigation Bar ===================start -->
+        <!--===============Navigation Bar ===================start -->
 
-    <div id="Navbar">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand " href="index.html" id="logo"><span>ETS</span> AKI VENTURE</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span ><i class="fa-solid fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="true" href="#acceuil">Acceuil</a>
-                        </li>
+        <div id="Navbar">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="index.html" id="logo"><span>ETS</span> AKI VENTURE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span ><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#acceuil">Acceuil</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#aPropos">A Propos</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="#aPropos">A Propos</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#realisation">Réalisations</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#realisation">Réalisations</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacts</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contacts</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#localisation">Localisation</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#localisation">Localisation</a>
+                            </li>
+                        </ul>
 
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <!--===============Navigation Bar ===================end -->
-
-
-
-    <!--===============Header section ===================start -->
-
-    <div class="container-fluid p-0 mb-5" id="acceuil">
-        <div class="home">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="centered d-flex flex-column align-items-center justify-content-center" >
-                    <h5 class="text-uppercase text-principal">Welcome to ETS AKI VENTURE</h5>
-                    <h1><span class="salutation">Votre </span><span class="changeContent"></span></h1>
-                    <a href="#aPropos" class="buttonDiscover btn" style="background: #0af51d;">Decouvez nous</a>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="images/r1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/r.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption ">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/r.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption ">
-                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            </nav>
         </div>
-    </div>
 
-    <div class="container-fluid px-5 mb-5">
-
-
-    </div>
+        <!--===============Navigation Bar ===================end -->
 
 
-    <!--===============Header Section ===================end -->
 
+        <!--===============Header section ===================start -->
 
-    <!--===============About section ===================start -->
+        <div class="container-fluid p-0 mb-5" id="acceuil">
+            <div class="home">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="centered d-flex flex-column align-items-center justify-content-center" >
+                        <h5 class="text-uppercase text-principal">Welcome to ETS AKI VENTURE</h5>
+                        <h1><span class="salutation">Votre </span><span class="changeContent"></span></h1>
+                        <a href="#aPropos" class="buttonDiscover btn" style="background: #0af51d;">Decouvrez nous</a>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/r1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
 
-    <section class="aPropos mb-5" id="aPropos">
-        <div class="aProposTitle">
-            <h1><b>A Propos De nous</b></h1>
-        </div>
-        <div class="group">
-            <div class="aPropos-content">
-                <h2><b>Decouvez ETS AKI VENTURE</b></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias ipsum consequatur modi, assumenda eveniet et repellendus? Unde in consequatur beatae suscipit soluta aperiam maiores laudantium modi aliquid.
-                    Tenetur, possimus ipsam.
-                </p>
-                <button class="cta-button float-end">Lire la suite</button>
-            </div>
-            <div class="aPropos-image">
-                <img src="images/r1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/r.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/r.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
 
-    </section>
 
-    <!--===============About Section ===================end -->
+        <!--===============Header Section ===================end -->
 
+        <!--===============Visitor count Section ===================Start -->
+        <div class="fixed-bottom">
+            <script type="text/javascript" src="https://freehitcounters.org/count/cuuy"></script><br>
+            <a href='https://www.versicherungen.at/hausversicherung-rechner/'>Haus Versicherung</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=babff14ebe9a009df23e31b838b5da52ea8f1817'></script>
+        </div>
 
-    <!--===============Service  section ===================start -->
+        <!--===============Visitor count Section ===================End -->
 
-    <section id="services" class="services">
-        <div class="">
-            <div class="main-text text-center">
-                <h1><b><span>Nos</span> Services</b></h1>
+        <!--===============About section ===================start -->
+
+        <section class="aPropos mb-5" id="aPropos">
+            <div class="aProposTitle">
+                <h1><span>A Propos</span> De Nous</h1>
+            </div>
+            <div class="group">
+                <div class="aPropos-content">
+                    <h2><b>Decouvrez l'ETS AKI VENTURE</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Alias ipsum consequatur modi, assumenda eveniet et repellendus? Unde in consequatur beatae suscipit soluta aperiam maiores laudantium modi aliquid.
+                        Tenetur, possimus ipsam.
+                        Alias ipsum consequatur modi, assumenda eveniet et repellendus? Unde in consequatur beatae suscipit soluta aperiam maiores laudantium modi aliquid.
+                        Tenetur, possimus ipsam.
+                    </p>
+                    <button class="cta-button float-end">Lire la suite</button>
+
+                </div>
+                <div class="aPropos-image">
+                    <img src="images/r1.png" alt="">
+                </div>
             </div>
 
-            <div class="row" style="margin-top: 30px">
 
-                <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fa-solid fa-person-digging"></i>
-                        <div class="card-body">
-                            <h3 >BTP</h3>
-                            <h6><span>Offre de services</span></h6>
-                            <p>
-                                - Routes </br>
-                                - Batiments</br>
-                                - Immobilies
-                            </p>
-                        </div>
-                    </div>
+        </section>
+
+        <!--===============About Section ===================end -->
+
+        <!--===============Momoment fort Section ===================Start -->
+
+        <div id="momentFort">
+            <div class="momentFort mb-5">
+                <div class="momentFortTitle">
+                    <h1><span>Moments</span> Forts</h1>
                 </div>
 
-                <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fa-solid fa-lightbulb fa-fade"></i>
-                        <div class="card-body">
-                            <h3 >ENERGY</h3>
-                            <h6>Intervention HTA / BT</h6>
-                            <p>
-                                - Installation et maintenance de ligne HTA/BT et energy renouvellable</br>
-                                - Installation nouveaux branchement BT et Normalisation</br>
-                                - Recouvrement (Coupures et Remises BT)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fa-solid fa-tower-cell"></i>
-                        <div class="card-body">
-                            <h3 >Télécommunication</h3>
-                            <h6><span>Offre de services</span></h6>
-                            <p>
-                                - Installation et déploiment de la fibre optique Aérienne et sous-terrain</br>
-                                - Construction des sites (plylones et équipement) </br>
-                                - Maintenance des site ( Energie, Equipement, Radiaux) et Caburation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fa-solid fa-cart-shopping fa-bounce"></i>
-                        <div class="card-body">
-                            <h3 >Commerce  / Boutique</h3>
-                            <h6><span>Aki SHOP</span></h6>
-                            <p>
-                                - Materiaux de construction, Equipement et Décoration de maison</br>
-                                - Alimentation et Produit de beauté </br>
-                                - Matériel et Equipement électrique
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fas fa-lightbulb"></i>
-                        <div class="card-body">
-                            <h3 >SOCIAL / Action Humanitaire</h3>
-                            <h6><span>Intervention</span></h6>
-                            <p>
-                                - Mossohgo (Ass)</br>
-                                - Djaïgol (Ass) </br>
-                                - Nallohtuiral ( Ass ou Groupe Whatsapp
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 py-3 py-md-0 col-lg-4 col-sm-12">
-                    <div class="card">
-                        <i class="fa-solid fa-medal"></i>
-                        <div class="card-body">
-                            <h3 >Divertissement</h3>
-                            <h6><span>Application</span></h6>
-                            <p>
-                                - Sport et Tourisme</br>
-                                - Loisir pour enfant </br>
-                                - Cuisine
-                            </p>
-                        </div>
-                    </div>
+                <div class="map">
+                    <iframe src="carousel-03/index.html"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
-    </section>
+        <!--===============Momoment fort Section ===================end -->
 
-    <!--===============service section ===================end -->
+        <!--===============Service  section ===================start -->
 
-
-    <!--===============Gallery Section ===================Start -->
-
-    <!-- Gallery section start-->
-    <div class="gallery" id="realisation">
-        <div class="gallery-content">
-            <div class="text-center wow fadeIn">
-                <h1 class="mb-5">Parcourir nos <span class="text text-uppercase" style="color: #0af51d;">realisarion</span></h1>
-            </div>
-
-            <div class="row g-3">
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn" >
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation1.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Energy électrique
-                            </small>
-                            <a href="galerie.html#Energieelectrique" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Nom du project</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation2.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Habillement
-                            </small>
-                            <a href="galerie.html#habillement" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Nom du project</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation3.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Décoration
-                            </small>
-                            <a href="galerie.html#decoration" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Nom du project</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation4.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Entretien routier
-                            </small>
-                            <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Nom du project</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation5.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Fabrication
-                            </small>
-                            <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Fabrication des ascenseurs Chez ATERYA</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Le DG de AKI VENTURE et le PDG de ATERYA, Pour une nouvelle aventure en Afrique (Zone Cemac) et Au Nigéria
-                                NB: pour Vos besoins: - Ascenseurs; - Escaliers roulants; - Tapis Roulants. Veillez nous contacter
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
-                    <div class="rooms-item shadow rounder overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/realisation6.jpg" alt="" class="imageCss gallery-item">
-                            <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
-                                Montage
-                            </small>
-                            <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
-                                plus de details
-                            </a>
-                        </div>
-                        <div class="p-4 mt-2">
-                            <div class="d-flex justify-content-between mb-3">
-                                <h5 class="mb-0">Nom du project</h5>
-                                <div class="ps-2">
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
-                                    <small class="fa-regular fa-star" style="color: #0af51d;"></small>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <i class="fa-watch"></i>
-                                <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
-                                <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>debut Execution</small>
-                                <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
-                            </div>
-
-                            <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Gallery section start-->
-    <!--===============Gallery Section ===================end -->
-
-    <!--===============Contact Section ===================Start -->
-    <!--Fabrication des ascenseurs Chez ATERYA. le DG de AKI VENTURE et le PDG de ATERYA, Pour une nouvelle aventure en Afrique (Zone Cemac) et Au Nigéria.
-        NB: pour Vos besoins:
-        - Ascenseurs;
-        - Escaliers roulants;
-        - Tapis Roulants.
-        Veillez nous contacter par mail au : akiventureaki@gmail.com ou par téléphone, au 661 137 970/ 696 024 770.
-        AKI VENTURE & ATERYA; Pour vos safety déplacements !!
-    -->
-    <div id="contact">
-        <section class="contact mb-5">
-            <div class="contactTitle">
-                <h1><span>Contacter</span> Nous</h1>
-            </div>
+        <section id="services" class="services">
             <div class="">
-                <div class="row me-1">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="servicesTitle">
+                    <h1><span>Nos</span> Services</h1>
+                </div>
+
+                <div class="row" style="margin-top: 30px">
+
+                    <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
                         <div class="card">
-
+                            <i class="fa-solid fa-cart-shopping fa-bounce"></i>
                             <div class="card-body">
-                                <h3 class="text-center text-uppercase">Laissez nous un mail</h3>
-                                <form action="https://formsubmit.co/ttarmand31@gmail.com" method="POST">
-
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="name" id="name" required>
-                                        <label for="name">Nom</label>
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" name="email" id="email"  placeholder="name@example.com" required>
-                                        <label for="email">Email</label>
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="objet" id="objet" required>
-                                        <label for="objet">Objet</label>
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message" style="height: 100px" required></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                    <input type="hidden" name="_captcha" value="true">
-                                    <input type="hidden" name="_template" value="table">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                                <h3>Aki Shop</h3>
+                                <h6><span>Commerce</span></h6>
+                                <p>
+                                    - Matériaux de construction </br>
+                                    - Équipement et Décoration de maison</br>
+                                    - Alimentation et Produit de beauté </br>
+                                    - Matériel et Équipement électrique
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="card col-12 col-sm-12 col-md-12 col-lg-6">
-                        <div class="card-body coordonnes">
-                            <h4 class="text-center">Nos coordonnées</h4>
-                            <div class="mt-5">
-                                <div class="d-flex">
-                                    <i class="fa-brands fa-chrome"></i>
-                                    <p class="ps-3"> Adress : Cameroun, Ouest, Noun, Koutaba, Tayandi, rez-de-chaussée de l'immeuble nextell </p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-envelope pt-1"></i>
-                                    <p class="ps-3"> Email : akiventureaki@gmail.com </p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-sharp fa-solid fa-phone pt-1"></i>
-                                    <p class="ps-3"> Telephone : +237 661 137 970/ + 237696 024 770 </p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-brands fa-facebook pt-1"></i>
-                                    <p>
-                                        <a href="https://web.facebook.com/profile.php?id=100063569242002&_rdc=1&_rdr" class="ps-3 text-decoration-none">Facebook : Ets Aki Venture </a>
-                                    </p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-brands fa-whatsapp pt-1"></i>
-                                    <p>
-                                        <a href="https://wa.me/237678272088" class="ps-3 text-decoration-none">Whatsapp : 696 02 47 70 </a></p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-brands fa-chrome pt-1"></i>
-                                    <p>
-                                        <a href="www.etsakiventure.com" class="text-decoration-none ps-3">Site web : www.etsakiventure.com </a>
-                                    </p>
-                                </div>
 
+
+                    <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div class="card-body">
+                                <h3>Energie</h3>
+                                <h6>Intervention HTA / BT</h6>
+                                <p>
+                                    - Installation et maintenance de ligne HTA/BT et energy renouvelable</br>
+                                    - Installation des nouveaux branchements BT et Normalisation</br>
+                                    - Recouvrement (Coupures et Remises BT)</br>
+                                    - Énergie Renouvelable (Énergie Solaire)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-solid fa-tower-cell fa-bounce"></i>
+                            <div class="card-body">
+                                <h3 >Télécommunication</h3>
+                                <h6><span>Offre de services</span></h6>
+                                <p>
+                                    - Installation et déploiement de la fibre optique Aérienne et souterrain</br>
+                                    - Construction des sites (pylônes et équipement) </br>
+                                    - Maintenance des sites (Énergie, Équipement Radio) </br>
+                                    - Carburation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-solid fa-person-digging"></i>
+                            <div class="card-body">
+                                <h3 >AKI Services</h3>
+                                <h6><span>Offre de services</span></h6>
+                                <p>
+                                    - Électricité </br>
+                                    - Travaux public</br>
+                                    - Batiment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-brands fa-pagelines fa-beat-fade"></i>
+                            <div class="card-body">
+                                <h3 >AKI Solidarité</h3>
+                                <h6><span>Action</span></h6>
+                                <p>
+                                    - Humanitaire</br>
+                                    - Santé </br>
+                                    - Association (Mossahgo, Djalgol, Wallohtiral)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <div class="card-body">
+                                <h3 >Divertissement</h3>
+                                <h6><span>Application</span></h6>
+                                <p>
+                                    - Sport et Tourisme</br>
+                                    - Loisir pour enfants </br>
+                                    - Cuisine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-lg-1 col-md-6 py-3 py-md-0 mb-3 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                            <div class="card-body">
+                                <h3 >QHSE</h3>
+                                <h6><span>Coordination</span></h6>
+                                <p>
+                                    - Environement</br>
+                                    - Hygène </br>
+                                    - Ethique
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-lg-1 col-md-6 py-3 py-md-0 col-lg-4 col-sm-12">
+                        <div class="card">
+                            <i class="fa-regular fa-handshake"></i>
+                            <div class="card-body">
+                                <h3 >AKI Partenariat</h3>
+                                <h6><span>Intervenant</span></h6>
+                                <p>
+                                </p></br>
+                                <p>
+                                </p></br>
+                                <p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -578,70 +305,446 @@
             </div>
         </section>
 
-    </div>
-
-    <!--===============Contact Section ===================end -->
+        <!--===============service section ===================end -->
 
 
-    <!--===============Localisation Section ===================Start -->
+        <!--===============Gallery Section ===================Start -->
 
-    <div id="localisation">
-        <div class="localisation mb-5">
-            <div class="localisationTitle">
-                <h1><span>Localisation</span> Google Map</h1>
-            </div>
+        <!-- Gallery section start-->
+        <div class="gallery" id="realisation">
+            <div class="gallery-content">
+                <div class="realisationTitle">
+                    <h1 class="mb-5"><span>Nos</span> Réalisations</h1>
+                </div>
 
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5271072537566!2d10.745262075680374!3d5.636583994344601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10f583f1699b429d%3A0x638fa9896ea75e06!2sEts%20AKI%20VENTURE%20KOUTABA!5e0!3m2!1sen!2scm!4v1690930861581!5m2!1sen!2scm"
-                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="row g-3">
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn" >
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation1.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Énergie électrique
+                                </small>
+                                <a href="galerie.html#Energieelectrique" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Nom du project</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation2.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Habillement
+                                </small>
+                                <a href="galerie.html#habillement" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Nom du project</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation3.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Décoration
+                                </small>
+                                <a href="galerie.html#decoration" class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Nom du project</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis?</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation4.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Entretien routier
+                                </small>
+                                <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Nom du project</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation5.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Fabrication
+                                </small>
+                                <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Fabrication des ascenseurs Chez ATERYA</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Le DG de AKI VENTURE et le PDG de ATERYA, Pour une nouvelle aventure en Afrique (Zone Cemac) et Au Nigéria
+                                    NB: pour Vos besoins: - Ascenseurs; - Escaliers roulants; - Tapis Roulants. Veillez nous contacter
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 py-3 py-md-0 col-lg-6 col-sm-12 col-xl-4 wow fadeIn">
+                        <div class="rooms-item shadow rounder overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/realisation6.jpg" alt="" class="imageCss gallery-item">
+                                <small class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4" style="color: black; font-weight: 900">
+                                    Montage
+                                </small>
+                                <a class="position-relative start-0 top-100 translate-middle-y rounded px-3 ms-4 btn" style="color: black; background-color: #0af51d">
+                                    plus de details
+                                </a>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Nom du project</h5>
+                                    <div class="ps-2">
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-solid fa-star fa-beat" style="color: #0af51d;"></small>
+                                        <small class="fa-regular fa-star" style="color: #0af51d;"></small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <i class="fa-watch"></i>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-calendar-days fa-flip me-2" style="color: #0af51d;"></i>date</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa-regular fa-flag me-2" style="color: #0af51d;"></i>Début Exécution</small>
+                                    <small ><i class="fa-watch me-2" style="color: #0af51d;"></i>fin</small>
+                                </div>
+
+                                <p class="text-body md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis provident nulla quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+        <!-- Gallery section start-->
+        <!--===============Gallery Section ===================end -->
 
-    <!--===============Localisation Section ===================End -->
-
-
-
-    <!-- Modal  section===============================Start-->
-    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Zoom Image</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!--===============Contact Section ===================Start -->
+        <!--Fabrication des ascenseurs Chez ATERYA. le DG de AKI VENTURE et le PDG de ATERYA, Pour une nouvelle aventure en Afrique (Zone Cemac) et Au Nigéria.
+            NB: pour Vos besoins:
+            - Ascenseurs;
+            - Escaliers roulants;
+            - Tapis Roulants.
+            Veillez nous contacter par mail au : akiventureaki@gmail.com ou par téléphone, au 661 137 970/ 696 024 770.
+            AKI VENTURE & ATERYA; Pour vos safety déplacements !!
+        -->
+        <div id="contact">
+            <section class="contact mb-5">
+                <div class="contactTitle">
+                    <h1><span>Contacter</span> Nous</h1>
                 </div>
-                <div class="modal-body">
-                    <img src="images/realisation3.jpg" class="modal-img" alt="modal img">
+                <div class="">
+                    <div class="row me-1"><div class="card col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="card-body horaire">
+                            <h4 class="text-center">Nos coordonnées</h4>
+                            <div class="row pt-3">
+                                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                    <p>Lundi</p>
+                                    <p>Mardi</p>
+                                    <p>Mercredi</p>
+                                    <p>Jeudi</p>
+                                    <p>Vendredi</p>
+                                    <p>Samedi</p>
+                                    <p>Dimanche</p>
+                                    <p id="para">Nous sommes :</p>
+
+                                </div>
+                                <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                                    <p>8:00 — 18:00</p>
+                                    <p>8:00 — 18:00</p>
+                                    <p>8:00 — 18:00</p>
+                                    <p>8:00 — 18:00</p>
+                                    <p>8:00 — 18:00</p>
+                                    <p>8:00 — 18:00</p>
+                                    <p>Fermé</p>
+                                    <p>
+                                        <span id='ct'></span>
+                                        <b><span id='status'></span></b>
+                                    </p>
+
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h3 class="text-center text-uppercase">Laissez nous un mail</h3>
+                                    <form action="https://formsubmit.co/ttarmand31@gmail.com" method="POST">
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="name" id="name" required>
+                                            <label for="name">Nom</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="email" id="email"  placeholder="name@example.com" required>
+                                            <label for="email">Email</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="objet" id="objet" required>
+                                            <label for="objet">Objet</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message" style="height: 100px" required></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                        <input type="hidden" name="_captcha" value="true">
+                                        <input type="hidden" name="_template" value="table">
+                                        <button type="submit" class="btn" style="background-color: #0af51d">Envoyer  <i class="fa-regular fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="card-body coordonnes">
+                                <h4 class="text-center">Nos coordonnées</h4>
+                                <div class="mt-5">
+                                    <div class="d-flex">
+                                        <i class="fa-brands fa-chrome"></i>
+                                        <p class="ps-3"> Adress : Cameroun, Ouest, Noun, Koutaba, Tayandi, rez-de-chaussée de l'immeuble nextell </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-envelope pt-1"></i>
+                                        <p class="ps-3"> Email : akiventureaki@gmail.com </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa-sharp fa-solid fa-phone pt-1"></i>
+                                        <p class="ps-3"> Telephone : +237 661 137 970/ + 237696 024 770 </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa-brands fa-facebook pt-1"></i>
+                                        <p>
+                                            <a href="https://web.facebook.com/profile.php?id=100063569242002&_rdc=1&_rdr" class="ps-3 text-decoration-none">Facebook : Ets Aki Venture </a>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa-brands fa-whatsapp pt-1"></i>
+                                        <p>
+                                            <a href="https://wa.me/237678272088" class="ps-3 text-decoration-none">Whatsapp : 696 02 47 70 </a></p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="fa-brands fa-chrome pt-1"></i>
+                                        <p>
+                                            <a href="www.etsakiventure.com" class="text-decoration-none ps-3">Site web : www.etsakiventure.com </a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!--===============Contact Section ===================end -->
+
+
+        <!--===============Localisation Section ===================Start -->
+
+        <div id="localisation">
+            <div class="localisation mb-5">
+                <div class="localisationTitle">
+                    <h1><span>Localisation</span> Google Map</h1>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5271072537566!2d10.745262075680374!3d5.636583994344601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10f583f1699b429d%3A0x638fa9896ea75e06!2sEts%20AKI%20VENTURE%20KOUTABA!5e0!3m2!1sen!2scm!4v1690930861581!5m2!1sen!2scm"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
+
+        <!--===============Localisation Section ===================End -->
+
+
+
+        <!-- Modal  section===============================Start-->
+        <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Zoom Image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/realisation3.jpg" class="modal-img" alt="modal img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal  ===============================End-->
     </div>
 
-    <!-- Modal  ===============================End-->
-</div>
 
 
+    <footer id="footer" class=" text-black d-flex-column text-center">
+    <hr class="mb-0">
+    <!--Copyright-->
+    <div class="py-3 text-center">
+        ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script> Ets Aki Venture | Tous droits réservés. Power by ttarmand31@gmail.com
+    </div>
+    <!--/.Copyright-->
+    </footer>
 
-<!--bootstrap js importation-->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 
-<!--Integration  file java script-->
+    <!--bootstrap js importation-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
-<!--use to send maill web site https://smtpjs.com/ -->
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+    <!--Integration  file java script-->
 
-<!-- fond awasome cdn start-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<!-- fond awasome cdn end-->
+    <!--use to send maill web site https://smtpjs.com/ -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
-<!--Google fonts start -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-<!--Google fonts start -->
+    <!-- fond awasome cdn start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- fond awasome cdn end-->
+
+    <!--Google fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--Google fonts End -->
 
 </body>
 </html>
